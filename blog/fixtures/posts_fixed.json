@@ -1,0 +1,182 @@
+[
+  {
+    "model": "blog.post",
+    "pk": 1,
+    "fields": {
+      "title": "Fundació",
+      "slug": "fundacio",
+      "content": "Resum o descripció del llibre titulat 'Fundació'.",
+      "author": 1,
+      "image": "",
+      "excerpt": "Extracte del llibre «Fundació»."
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 2,
+    "fields": {
+      "title": "Jo, robot",
+      "slug": "jo,-robot",
+      "content": "Resum o descripció del llibre titulat 'Jo, robot'.",
+      "author": 1,
+      "image": "",
+      "excerpt": "Extracte del llibre «Jo, robot»."
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 3,
+    "fields": {
+      "title": "Assassinat a l'Orient Express",
+      "slug": "assassinat-a-l'orient-express",
+      "content": "Resum o descripció del llibre titulat 'Assassinat a l'Orient Express'.",
+      "author": 2,
+      "image": "",
+      "excerpt": "Extracte del llibre «Assassinat a l'Orient Express»."
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 4,
+    "fields": {
+      "title": "Deu negrets",
+      "slug": "deu-negrets",
+      "content": "Resum o descripció del llibre titulat 'Deu negrets'.",
+      "author": 2,
+      "image": "",
+      "excerpt": "Extracte del llibre «Deu negrets»."
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 5,
+    "fields": {
+      "title": "Cien años de soledad",
+      "slug": "cien-anos-de-soledad",
+      "content": "Resum o descripció del llibre titulat 'Cien años de soledad'.",
+      "author": 3,
+      "image": "",
+      "excerpt": "Extracte del llibre «Cien años de soledad»."
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 6,
+    "fields": {
+      "title": "El amor en los tiempos del cólera",
+      "slug": "el-amor-en-los-tiempos-del-colera",
+      "content": "Resum o descripció del llibre titulat 'El amor en los tiempos del cólera'.",
+      "author": 3,
+      "image": "",
+      "excerpt": "Extracte del llibre «El amor en los tiempos del cólera»."
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 7,
+    "fields": {
+      "title": "Harry Potter i la pedra filosofal",
+      "slug": "harry-potter-i-la-pedra-filosofal",
+      "content": "Resum o descripció del llibre titulat 'Harry Potter i la pedra filosofal'.",
+      "author": 4,
+      "image": "",
+      "excerpt": "Extracte del llibre «Harry Potter i la pedra filosofal»."
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 8,
+    "fields": {
+      "title": "Harry Potter i la cambra secreta",
+      "slug": "harry-potter-i-la-cambra-secreta",
+      "content": "Resum o descripció del llibre titulat 'Harry Potter i la cambra secreta'.",
+      "author": 4,
+      "image": "",
+      "excerpt": "Extracte del llibre «Harry Potter i la cambra secreta»."
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 9,
+    "fields": {
+      "title": "Estimat Miquel",
+      "slug": "estimat-miquel",
+      "content": "Resum o descripció del llibre titulat 'Estimat Miquel'.",
+      "author": 5,
+      "image": "",
+      "excerpt": "Extracte del llibre «Estimat Miquel»."
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 10,
+    "fields": {
+      "title": "Casa de misericòrdia",
+      "slug": "casa-de-misericordia",
+      "content": "Resum o descripció del llibre titulat 'Casa de misericòrdia'.",
+      "author": 5,
+      "image": "",
+      "excerpt": "Extracte del llibre «Casa de misericòrdia»."
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 11,
+    "fields": {
+      "title": "El cavaller de la nit",
+      "slug": "el-cavaller-de-la-nit",
+      "content": "Resum o descripció del llibre titulat 'El cavaller de la nit'.",
+      "author": 1,
+      "image": "",
+      "excerpt": "Extracte del llibre «El cavaller de la nit»."
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 12,
+    "fields": {
+      "title": "Crim al campanar",
+      "slug": "crim-al-campanar",
+      "content": "Resum o descripció del llibre titulat 'Crim al campanar'.",
+      "author": 2,
+      "image": "",
+      "excerpt": "Extracte del llibre «Crim al campanar»."
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 13,
+    "fields": {
+      "title": "Llum de pluja",
+      "slug": "llum-de-pluja",
+      "content": "Resum o descripció del llibre titulat 'Llum de pluja'.",
+      "author": 5,
+      "image": "",
+      "excerpt": "Extracte del llibre «Llum de pluja»."
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 14,
+    "fields": {
+      "title": "El príncep sense regne",
+      "slug": "el-princep-sense-regne",
+      "content": "Resum o descripció del llibre titulat 'El príncep sense regne'.",
+      "author": 4,
+      "image": "",
+      "excerpt": "Extracte del llibre «El príncep sense regne»."
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 15,
+    "fields": {
+      "title": "Crònica d’una mort anunciada",
+      "slug": "cronica-d’una-mort-anunciada",
+      "content": "Resum o descripció del llibre titulat 'Crònica d’una mort anunciada'.",
+      "author": 3,
+      "image": "",
+      "excerpt": "Extracte del llibre «Crònica d’una mort anunciada»."
+    }
+  }
+]

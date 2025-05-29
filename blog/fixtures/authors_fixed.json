@@ -1,0 +1,52 @@
+[
+  {
+    "model": "blog.author",
+    "pk": 1,
+    "fields": {
+      "first_name": "Isaac",
+      "last_name": "Asimov",
+      "email": "asimov@example.com",
+      "bio": "Mestre de la ciència-ficció clàssica."
+    }
+  },
+  {
+    "model": "blog.author",
+    "pk": 2,
+    "fields": {
+      "first_name": "Agatha",
+      "last_name": "Christie",
+      "email": "christie@example.com",
+      "bio": "Reina del misteri i novel·la policíaca."
+    }
+  },
+  {
+    "model": "blog.author",
+    "pk": 3,
+    "fields": {
+      "first_name": "Gabriel",
+      "last_name": "García Márquez",
+      "email": "ggmarquez@example.com",
+      "bio": "Autor de realisme màgic i literatura llatinoamericana."
+    }
+  },
+  {
+    "model": "blog.author",
+    "pk": 4,
+    "fields": {
+      "first_name": "J.K.",
+      "last_name": "Rowling",
+      "email": "rowling@example.com",
+      "bio": "Creadora de l'univers de Harry Potter."
+    }
+  },
+  {
+    "model": "blog.author",
+    "pk": 5,
+    "fields": {
+      "first_name": "Joan",
+      "last_name": "Margarit",
+      "email": "margarit@example.com",
+      "bio": "Reconegut poeta català."
+    }
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "model": "blog.post_tags",
+    "pk": null,
+    "fields": {
+      "post": 1,
+      "tag": 1
+    }
+  },
+  {
+    "model": "blog.post_tags",
+    "pk": null,
+    "fields": {
+      "post": 2,
+      "tag": 1
+    }
+  },
+  {
+    "model": "blog.post_tags",
+    "pk": null,
+    "fields": {
+      "post": 3,
+      "tag": 2
+    }
+  },
+  {
+    "model": "blog.post_tags",
+    "pk": null,
+    "fields": {
+      "post": 4,
+      "tag": 2
+    }
+  },
+  {
+    "model": "blog.post_tags",
+    "pk": null,
+    "fields": {
+      "post": 5,
+      "tag": 5
+    }
+  },
+  {
+    "model": "blog.post_tags",
+    "pk": null,
+    "fields": {
+      "post": 6,
+      "tag": 5
+    }
+  },
+  {
+    "model": "blog.post_tags",
+    "pk": null,
+    "fields": {
+      "post": 7,
+      "tag": 4
+    }
+  },
+  {
+    "model": "blog.post_tags",
+    "pk": null,
+    "fields": {
+      "post": 8,
+      "tag": 4
+    }
+  },
+  {
+    "model": "blog.post_tags",
+    "pk": null,
+    "fields": {
+      "post": 9,
+      "tag": 3
+    }
+  },
+  {
+    "model": "blog.post_tags",
+    "pk": null,
+    "fields": {
+      "post": 10,
+      "tag": 3
+    }
+  },
+  {
+    "model": "blog.post_tags",
+    "pk": null,
+    "fields": {
+      "post": 11,
+      "tag": 1
+    }
+  },
+  {
+    "model": "blog.post_tags",
+    "pk": null,
+    "fields": {
+      "post": 12,
+      "tag": 2
+    }
+  },
+  {
+    "model": "blog.post_tags",
+    "pk": null,
+    "fields": {
+      "post": 13,
+      "tag": 3
+    }
+  },
+  {
+    "model": "blog.post_tags",
+    "pk": null,
+    "fields": {
+      "post": 14,
+      "tag": 4
+    }
+  },
+  {
+    "model": "blog.post_tags",
+    "pk": null,
+    "fields": {
+      "post": 15,
+      "tag": 5
+    }
+  }
+]
