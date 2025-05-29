@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block hero_class %}tags{% endblock %}
+{% block hero_title %}Posts amb la tag <u>{{ tag }}</u>{% endblock %}
+
+{% block content %}
+  <ul class="post-grid">
+    {% for post in posts %}
+      <li class="post-card">
+        <a href="{% url 'posts-detail' post.slug %}">{{ post.title }}</a>
+        <p class="post-date">{{ post.date|date:"d/m/Y" }}</p>
+        <div class="tag-badges">
+          {% for t in post.tags.all %}
+            <a href="{% url 'tag-posts' t.name %}" class="tag-badge">#{{ t.name }}</a>
+          {% endfor %}
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock %}

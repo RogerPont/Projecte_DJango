@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block hero_class %}authors{% endblock %}
+{% block hero_title %}Autors{% endblock %}
+{% block hero_subtitle %}Descobreix qui hi ha darrere del contingut{% endblock %}
+
+{% block content %}
+<div class="container text-center mt-4">
+  <h2 class="mb-4">Llistat d'autors</h2>
+  <ul class="author-cards">
+    {% for author in authors %}
+      <li class="author-card">
+        <a href="{% url 'author-detail' author.id %}">
+          <img src="{% static 'images/author.jpg' %}" alt="Foto de {{ author.name }}">
+          <div class="author-info">
+            <h3>{{ author.name }}</h3>
+            <p>Consulta el seu perfil →</p>
+          </div>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %}
+

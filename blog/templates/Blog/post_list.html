@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block hero_class %}posts{% endblock %}
+{% block hero_title %}Tots els articles{% endblock %}
+{% block hero_subtitle %}Consulta les últimes publicacions{% endblock %}
+<h1 style="color: red;">PLANTILLA CARREGADA</h1>
+
+{% block content %}
+  <h2 class="text-center mb-4">Tots els articles</h2>
+  
+  <div class="post-grid-wrapper">
+    <ul class="post-grid">
+      {% for post in posts %}
+        <li class="post-card">
+          <a href="{% url 'posts-detail' post.slug %}">{{ post.title }}</a>
+          <div class="post-date">{{ post.date|date:"d M Y" }}</div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endblock %}

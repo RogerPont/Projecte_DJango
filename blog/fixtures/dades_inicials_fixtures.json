@@ -1,0 +1,93 @@
+[
+  {
+    "model": "blog.author",
+    "pk": 1,
+    "fields": {
+      "first_name": "Anna",
+      "last_name": "Martí",
+      "email": "anna@example.com",
+      "bio": "Periodista especialitzada en cultura."
+    }
+  },
+  {
+    "model": "blog.author",
+    "pk": 2,
+    "fields": {
+      "first_name": "Jordi",
+      "last_name": "Serra",
+      "email": "jordi@example.com",
+      "bio": "Apassionat per la ciència i la divulgació."
+    }
+  },
+  {
+    "model": "blog.tag",
+    "pk": 1,
+    "fields": {
+      "name": "Cultura"
+    }
+  },
+  {
+    "model": "blog.tag",
+    "pk": 2,
+    "fields": {
+      "name": "Ciència"
+    }
+  },
+  {
+    "model": "blog.tag",
+    "pk": 3,
+    "fields": {
+      "name": "Opinió"
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 1,
+    "fields": {
+      "title": "Les noves tendències culturals",
+      "slug": "noves-tendencies-culturals",
+      "content": "En aquest article explorarem les noves formes d'expressió artística...",
+      "excerpt": "Una mirada breu a les noves tendències culturals.",
+      "date": "2025-01-01T10:00:00Z",
+      "author": 1,
+      "tags": [
+        1,
+        3
+      ],
+      "image": ""
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 2,
+    "fields": {
+      "title": "Ciència al dia: descobriments recents",
+      "slug": "ciencia-descobriments-recents",
+      "content": "Repassem les troballes més rellevants del món científic aquest any...",
+      "excerpt": "Els avenços més destacats en ciència.",
+      "date": "2025-01-02T09:30:00Z",
+      "author": 2,
+      "tags": [
+        2
+      ],
+      "image": ""
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 3,
+    "fields": {
+      "title": "Reflexions sobre el futur de la tecnologia",
+      "slug": "reflexions-futur-tecnologia",
+      "content": "Amb el creixement exponencial de la tecnologia, ens preguntem cap a on anem...",
+      "excerpt": "Una opinió sobre el futur tecnològic.",
+      "date": "2025-01-03T12:00:00Z",
+      "author": 2,
+      "tags": [
+        2,
+        3
+      ],
+      "image": ""
+    }
+  }
+]

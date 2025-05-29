@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block hero_class %}default{% endblock %}
+{% block hero_title %}Benvingut al Blog M3 - UF6{% endblock %}
+{% block hero_subtitle %}Aquest és el projecte d'aprenentatge M3-UF6 basat en Django{% endblock %}
+
+{% block title %}Inici{% endblock %}
+
+{% block content %}
+<div class="container text-center mt-4">
+  <h2 class="mb-4">Últimes publicacions</h2>
+  <ul class="post-grid">
+    {% for post in posts %}
+      <li class="post-card">
+        <a href="{% url 'posts-detail' post.slug %}">{{ post.title }}</a>
+        <div class="post-date">{{ post.date|date:"d/m/Y" }}</div>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <div class="mt-4">
+    <a href="{% url 'posts-list' %}" class="btn-see-more">Veure tots els articles →</a>
+  </div>
+</div>
+{% endblock %}

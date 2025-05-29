@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block hero_class %}authors{% endblock %}
+{% block hero_title %}{{ author.name }}{% endblock %}
+{% block hero_subtitle %}Perfil de l'autor i els seus articles{% endblock %}
+
+{% block content %}
+<div class="author-detail">
+  <div class="author-header">
+    <img src="{% static 'images/author.jpg' %}" alt="Foto de {{ author.name }}">
+
+    <div>
+      <h2>{{ author.name }}</h2>
+      {% if author.bio %}
+        <p>{{ author.bio }}</p>
+      {% endif %}
+    </div>
+  </div>
+
+  {% if tags %}
+    <div class="author-tags">
+      <h4>Etiquetes utilitzades:</h4>
+      <ul class="tag-list">
+        {% for tag in tags %}
+          <li><a href="{% url 'tag-posts' tag.name %}">{{ tag.name }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+
+  <h3>Articles de l'autor</h3>
+
+  {% if posts %}
+    <ul class="post-list">
+      {% for post in posts %}
+        <li class="post-card">
+          <a href="{% url 'posts-detail' post.slug %}">{{ post.title }}</a>
+          <div class="post-date">{{ post.date|date:"d/m/Y" }}</div>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>Aquest autor encara no ha publicat cap article.</p>
+  {% endif %}
+</div>
+{% endblock %}

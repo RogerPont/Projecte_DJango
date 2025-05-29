@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Blog{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <!-- Navegació -->
+    <nav class="custom-nav">
+        <a class="nav-link {% if request.path == '/' %}active{% endif %}" href="{% url 'index' %}">INICI</a>
+        <a class="nav-link {% if '/posts' in request.path %}active{% endif %}" href="{% url 'posts-list' %}">POSTS</a>
+        <a class="nav-link {% if '/authors' in request.path %}active{% endif %}" href="{% url 'authors-list' %}">AUTORS</a>
+        <a class="nav-link {% if '/tags' in request.path %}active{% endif %}" href="{% url 'tags-list' %}">TAGS</a>
+    </nav>
+
+    <!-- Hero -->
+    {% block image %}
+    <header class="hero-image {% block hero_class %}default{% endblock %}">
+        <div class="hero-overlay">
+            <h1>{% block hero_title %}Benvingut al Blog M3 - UF6{% endblock %}</h1>
+            <p>{% block hero_subtitle %}Aquest és el projecte d'aprenentatge M3-UF6 basat en Django{% endblock %}</p>
+        </div>
+    </header>
+    {% endblock %}
+
+    <!-- Contingut principal -->
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+
+    <!-- Peu de pàgina -->
+    <footer>
+        <p>&copy; 2025 Blog M3 - UF6</p>
+    </footer>
+</body>
+</html>

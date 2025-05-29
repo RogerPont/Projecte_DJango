@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block hero_class %}post{% endblock %}
+{% block hero_title %}{{ post.title }}{% endblock %}
+{% block hero_subtitle %}Publicat el {{ post.date|date:"d M Y" }}{% endblock %}
+
+{% block content %}
+  <div class="post-detail">
+    <h2>{{ post.title }}</h2>
+    <p>
+      <em>{{ post.date|date:"d M Y" }} — per 
+        <a href="{% url 'author-detail' author_id=post.author.id %}">{{ post.author.name }}</a>
+      </em>
+    </p>
+
+    <div>{{ post.content|linebreaks }}</div>
+
+    {% if post.tags.exists %}
+      <p><strong>Etiquetes:</strong>
+        {% for tag in post.tags.all %}
+          <a href="{% url 'tag-posts' tag.name %}">{{ tag.name }}</a>{% if not forloop.last %}, {% endif %}
+        {% endfor %}
+      </p>
+    {% endif %}
+  </div>
+{% endblock %}
