@@ -1,3 +1,4 @@
+# Actualitzat per usar PAT_GITHUB
 name: Genera documentació Pydoc
 
 on:
@@ -33,3 +34,4 @@ jobs:
           github_token: ${{ secrets.PAT_GITHUB }}
           publish_dir: ./docs
 
+          
