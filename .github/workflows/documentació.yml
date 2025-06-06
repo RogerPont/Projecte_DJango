@@ -1,0 +1,34 @@
+name: Genera documentació Pydoc
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout del codi
+        uses: actions/checkout@v4
+
+      - name: Instal·lar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Instal·lar dependències
+        run: |
+          pip install -r requirements.txt
+
+      - name: Generar documentació Pydoc
+        run: |
+          mkdir -p docs
+          find . -name "*.py" -exec pydoc -w {} \;
+          mv *.html docs/ || true
+
+      - name: Pujar a GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
