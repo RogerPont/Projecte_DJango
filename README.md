@@ -90,6 +90,12 @@ BibliotecaVirtual/
     └── wsgi.py
 ```
 
+## 📄 Documentació
+
+- [Documentació models.py](https://htmlpreview.github.io/?https://github.com/RogerPont/Projecte_Django/blob/main/models.html)
+- [Documentació views.py](https://htmlpreview.github.io/?https://github.com/RogerPont/Projecte_Django/blob/main/views.html)
+- [Documentació urls.py](https://htmlpreview.github.io/?https://github.com/RogerPont/Projecte_Django/blob/main/urls.html)
+
 ---
 
 ## 📖 Models Principals
