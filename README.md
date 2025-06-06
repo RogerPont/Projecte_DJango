@@ -164,19 +164,11 @@ Les contribucions són benvingudes! Procediment per contribuir:
 4. Puja la branca (`git push origin feature/NovaFuncionalitat`).
 5. Obre una *Pull Request*.
 
----
-
-## 📜 Llicència
-
-Aquest projecte està sota la llicència MIT. Consulta el fitxer `LICENSE` per a més informació.
-
----
-
 ## ✉️ Contacte
 
-- **Nom:** EL TEU NOM
-- **Email:** elteucorreu@example.com
-- **GitHub:** [EL_TEU_USUARI](https://github.com/EL_TEU_USUARI)
+- **Nom:** Roger
+- **Email:** roger.pont.2173@lacetania.com
+- **GitHub:** [RogerPont](https://github.com/EL_TEU_USUARI)
 
 ---
 
